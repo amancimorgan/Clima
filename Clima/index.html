@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>CNSA - Panama</title>
+        <meta charset="UTF-8">
+        <link href="css/materialize.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/app.js"></script>
+        <style>
+            nav {
+                background: #fff;
+                color: #D51E1C;
+            }
+            nav .brand-logo,
+            nav ul li a{
+                color: #545454;
+            }
+            .respuesta{
+                padding:8px; margin-left:15px; color: #777777;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">
+                <img src="img/logo.jpg" width="105" height="62">  
+            </a>
+            <ul class="right hide-on-med-and-down" style=" border-bottom: solid 2px #1CB4D5">
+              <li><a href="index.html">Incio</a></li>
+            </ul>
+          </div>
+        </nav>
+        <br/>
+        <div class="row">
+            <div class="col s12 m5">
+              <div class="card" style=" border-top: solid 5px #1CB4D5">
+                <div class="card-content">
+                  <h5 style="color: #919191;">
+                      Favor complete el formulario
+                    </h5>
+                  <form>
+                      <div class="row">
+                            <div class="input-field col s12 m8">
+                            <select class="select">
+                                <option value="">Seleccione un pais</option>
+                                <option value="Afganistan">Afganistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Paraguay">Paraguay</option>
+                            </select>
+                            <label>Region a evaluar</label>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <p class="boton btn waves-effect waves-light" 
+                                 name="action"
+                                 style=" background:#47A1DD; color:#fff;">Procesar
+                          </p>
+                      </div>
+                      
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col s12 m7">
+              <div class="card" style=" border-top: solid 5px #1CB4D5">
+                  <br/>
+                  <div class="row">
+                    <div class="respuesta weather__block" id="js_w_pais"></div>
+                    <div class="respuesta weather__block" id="js_w_temp"></div>
+                    <div class="respuesta weather__block" id="js_w_desc"></div>
+                    <div class="respuesta weather__block" id="js_w_hum"></div>
+                    <div class="respuesta weather__block" id="js_w_lat"></div>
+                    <div class="respuesta weather__block" id="js_w_lon"></div>
+                    
+                  </div>
+                    <!--<section class="section__main">
+                        <div class="section__content">
+                            
+                            <div class="weather__block" id="js_w_icon"></div>
+                        </div>
+                    </section>->
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
